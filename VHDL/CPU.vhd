@@ -91,7 +91,8 @@ begin
 								'1' when	(IR_opcode = OP_MOVRA) else
 								'0';
 	
-	flow_instruction	<= '1' when (IR_opcode(7 downto 5) = "000") else -- instructions that control flow starts with 000
+	flow_instruction	<= '1' when (IR_opcode = OP_HALT) else
+								'1' when (IR_opcode(7 downto 5) = "000") else -- instructions that control flow starts with 000
 								'0';
 	
 	alu_instruction   <= '1' when (IR_opcode(7) = '1') else -- instruction that are ALU data manipulation have 1 on MSB

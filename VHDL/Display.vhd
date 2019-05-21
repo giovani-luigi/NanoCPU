@@ -127,7 +127,7 @@ begin
 			when "1000" => --PGFEDCBA
 				LedPinVal <= "10000000"; -- segments draw a '8' = all segments
 			when "1001" => --PGFEDCBA
-				LedPinVal <= "00010000"; -- segments draw a '9' = A+F+G+B+C+D
+				LedPinVal <= "10010000"; -- segments draw a '9' = A+F+G+B+C+D
 			when others =>
 				LedPinVal <= "11111111"; -- ALL OFF
 		end case;

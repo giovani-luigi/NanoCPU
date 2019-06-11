@@ -85,9 +85,6 @@ begin
 								'1' when	(IR_opcode = OP_ANDR) else
 								'1' when	(IR_opcode = OP_IORR) else
 								'1' when	(IR_opcode = OP_XORR) else 
-								'1' when	(IR_opcode = OP_NOT) else 
-								'1' when	(IR_opcode = OP_SET) else 
-								'1' when	(IR_opcode = OP_CLR) else 
 								'1' when	(IR_opcode = OP_MOVRA) else
 								'0';
 	
